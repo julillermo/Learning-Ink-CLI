@@ -1,0 +1,47 @@
+{
+  "name": "learning-ink-cli",
+  "version": "0.1.0",
+  "description": "Dedicated repostiory for learning the ink cli TUI framework",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "Learning-Ink-CLI": "./bin/run.js"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prebuild": "rimraf --no-verbose --no-interactive ./build",
+    "dev": "node ./bin/dev",
+    "dev:win": "./bin/dev.cmd",
+    "dev:server": "pnpm build && tsc --build --watch",
+    "format": "pnpm exec biome format --write",
+    "lint": "pnpm exec biome lint --write",
+    "biome": "pnpm exec biome check",
+    "add-command": "pnpm exec oclif generate command",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "TulioG_Projects",
+  "license": "MIT",
+  "packageManager": "pnpm@10.16.1",
+  "oclif": {
+    "bin": "Learning-Ink-CLI",
+    "commands": "./build/commands",
+    "dirname": "Learning-Ink-CLI",
+    "topicSeparator": " "
+  },
+  "dependencies": {
+    "@oclif/core": "4.7.2",
+    "ink": "^6.3.1",
+    "ink-big-text": "^2.0.0",
+    "ink-gradient": "^3.0.0",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.0",
+    "@types/node": "^18.19.130",
+    "@types/react": "^19.2.2",
+    "oclif": "4.22.35",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.3"
+  }
+}
