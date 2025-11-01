@@ -17,7 +17,8 @@ export function HookUseApp() {
         handleDelayedExit();
       } else if (input === "e") {
         handleKeyboardInput(input);
-        // Passing and error string doesn't seem to do anything?
+        // The following only works when used with waitUntilExit()
+        // https://github.com/vadimdemedes/ink?tab=readme-ov-file#waituntilexit
         const newError = new Error("exited with error message");
         handleDelayedExit(1000, { error: newError });
       } else {
@@ -58,4 +59,7 @@ export function HookUseApp() {
       <Text>e - exit with error </Text>
     </>
   );
+}
+function useEffecct(arg0: () => void, arg1: never[]) {
+  throw new Error("Function not implemented.");
 }
