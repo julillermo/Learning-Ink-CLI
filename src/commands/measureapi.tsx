@@ -1,14 +1,14 @@
 import { Command } from "@oclif/core";
 import { render } from "ink";
-import { HookUseFocus } from "../../examples/hooks/index.js";
+import { InkMeasure } from "../examples/MeasureApi.js";
 
-export default class UseFocus extends Command {
+export default class UseMeasureApi extends Command {
   static override summary = "Ink example for the <Text> and <Box> components";
   static override description = "";
 
   public async run(): Promise<void> {
-    const { args: _args, flags: _flags } = await this.parse(UseFocus);
+    const { args: _args, flags: _flags } = await this.parse(UseMeasureApi);
 
-    render(<HookUseFocus />);
+    render(<InkMeasure />);
   }
 }
