@@ -64,6 +64,11 @@ export function HookUseFocusManager() {
 
   return (
     <>
+      {/* This is for react-devtools
+          I couldn't get it to work. I'll just revisit this in the future
+          if ever I need it.
+      */}
+      <script src="http://localhost:8097"></script>
       <Text> pageLeft / pageUp - focus previous component</Text>
       <Text> pageRight / pageDown - focus next component</Text>
       <FocusBox
