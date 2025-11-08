@@ -66,9 +66,14 @@ export function HookUseFocusManager() {
     <>
       {/* This is for react-devtools
           I couldn't get it to work. I'll just revisit this in the future
-          if ever I need it.
+            if ever I need it.
+          This is also possibly complicated by the fact that I'm using 
+            oclif to manage my cli input
+          This appears to break after I run `npx react-devtools` in a
+            separate terminal
       */}
       <script src="http://localhost:8097"></script>
+      {/* <script src="http://192.168.100.19:8097"></script> */}
       <Text> pageLeft / pageUp - focus previous component</Text>
       <Text> pageRight / pageDown - focus next component</Text>
       <FocusBox
