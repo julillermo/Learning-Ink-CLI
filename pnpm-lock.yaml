@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@faker-js/faker':
+        specifier: ^10.1.0
+        version: 10.1.0
       '@oclif/core':
         specifier: 4.7.2
         version: 4.7.2
@@ -23,6 +26,9 @@ importers:
       react:
         specifier: ^19.2.0
         version: 19.2.0
+      strip-ansi:
+        specifier: ^7.1.2
+        version: 7.1.2
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.0
@@ -425,6 +431,10 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@faker-js/faker@10.1.0':
+    resolution: {integrity: sha512-C3mrr3b5dRVlKPJdfrAXS8+dq+rq8Qm5SNRazca0JKgw1HQERFmrVb0towvMmw5uu8hHKNiQasMaR/tydf3Zsg==}
+    engines: {node: ^20.19.0 || ^22.13.0 || ^23.5.0 || >=24.0.0, npm: '>=10'}
 
   '@inquirer/ansi@1.0.1':
     resolution: {integrity: sha512-yqq0aJW/5XPhi5xOAL1xRCpe1eh8UFVgYFpFsjEqmIR8rKLyP+HINvFXwUaxYICflJrVlxnp7lLN6As735kVpw==}
@@ -2682,6 +2692,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.25.12':
     optional: true
+
+  '@faker-js/faker@10.1.0': {}
 
   '@inquirer/ansi@1.0.1': {}
 

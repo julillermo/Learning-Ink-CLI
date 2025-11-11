@@ -1,6 +1,6 @@
 import { Command } from "@oclif/core";
 import { render } from "ink";
-import { ExampleBoxBorder } from "../../examples/components/index.js";
+import { ExampleBoxBorder } from "../../examples/readme-examples/components/index.js";
 
 export default class BoxBorder extends Command {
   static override summary = "Ink example for the <Text> and <Box> components";

@@ -1,6 +1,6 @@
 import { Command } from "@oclif/core";
 import { render } from "ink";
-import { InkScreenReader } from "../examples/ScreenReader.js";
+import { InkScreenReader } from "../examples/readme-examples/ScreenReader.js";
 
 export default class ScreenReaderObj extends Command {
   static override summary = "Ink example for the <Text> and <Box> components";

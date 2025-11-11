@@ -1,6 +1,6 @@
 import { Command } from "@oclif/core";
 import { render } from "ink";
-import { InkMeasure } from "../examples/MeasureApi.js";
+import { InkMeasure } from "../examples/readme-examples/MeasureApi.js";
 
 export default class UseMeasureApi extends Command {
   static override summary = "Ink example for the <Text> and <Box> components";

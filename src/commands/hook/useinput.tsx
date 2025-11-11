@@ -1,6 +1,6 @@
 import { Command } from "@oclif/core";
 import { render } from "ink";
-import { HookUseInput } from "../../examples/hooks/index.js";
+import { HookUseInput } from "../../examples/readme-examples/hooks/index.js";
 
 export default class UseInput extends Command {
   static override summary = "Ink example for the <Text> and <Box> components";

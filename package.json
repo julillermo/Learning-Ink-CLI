@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "prebuild": "rimraf --no-verbose --no-interactive ./build",
-    "dev": "DEV=true node ./bin/dev",
+    "dev": "node ./bin/dev",
     "dev:win": "./bin/dev.cmd",
     "dev:server": "pnpm build && tsc --build --watch ",
     "format": "pnpm exec biome format --write",
@@ -30,11 +30,13 @@
     "topicSeparator": " "
   },
   "dependencies": {
+    "@faker-js/faker": "^10.1.0",
     "@oclif/core": "4.7.2",
     "ink": "^6.3.1",
     "ink-big-text": "^2.0.0",
     "ink-gradient": "^3.0.0",
-    "react": "^19.2.0"
+    "react": "^19.2.0",
+    "strip-ansi": "^7.1.2"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.0",

@@ -1,6 +1,6 @@
 import { Command } from "@oclif/core";
 import { render } from "ink";
-import { ExampleStatic } from "../../examples/components/index.js";
+import { ExampleStatic } from "../../examples/readme-examples/components/index.js";
 
 export default class Static extends Command {
   static override summary = "Ink example for the <Text> and <Box> components";

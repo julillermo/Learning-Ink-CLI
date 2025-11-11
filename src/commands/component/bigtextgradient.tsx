@@ -1,6 +1,6 @@
 import { Command } from "@oclif/core";
 import { render } from "ink";
-import { ExampleBigTextGradient } from "../../examples/components/index.js";
+import { ExampleBigTextGradient } from "../../examples/readme-examples/components/index.js";
 
 export default class BigTextGradient extends Command {
   static override summary = "Ink example for the <Text> and <Box> components";
